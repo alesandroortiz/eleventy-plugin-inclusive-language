@@ -52,7 +52,7 @@ module.exports = {
 
       if(found.length) {
         console.warn(chalk.yellow(`Inclusive Language Linter (${inputPath}):`));
-        console.warn("    " + found.join("\n" + "    "));
+        console.warn("    " + chalk.yellow(found.join("\n" + "    ")));
       }
     });
   }
